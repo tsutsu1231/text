@@ -10,7 +10,6 @@
         
         try
         {
-        
 
             //p73～
         $kadai1_ID=$_POST['ID'];

@@ -93,7 +93,7 @@
         print'<br/>';
     }
 
-    if($kadai1_name=='')
+    if($kadai1_email=='')
     {
         print'Emailが入力されていません。<br/>';
     }
@@ -104,6 +104,7 @@
         print'<br/>';
     }
 
+
     if($kadai1_ID==''|| $kadai1_name==''||$kadai1_hurigana=='' || $kadai1_yubin=='' || $kadai1_jusyo=='' || $kadai1_denwa=='' ||$kadai1_email=='')
     {
         print'<form>';
@@ -112,6 +113,7 @@
     }
     else
     {
+
         //$staff_pass=md5($staff_pass);  //わからない　p63
         $kadai1_ID=md5($kadai1_ID);
         $kadai1_name=md5($kadai1_name);
@@ -128,6 +130,11 @@
         print'<input type="hidden" name="jusyo" value="'.$$kadai1_jusyo.'">';
         print'<input type="hidden" name="denwa" value="'.$$kadai1_denwa.'">';
         print'<input type="hidden" name="email" value="'.$$kadai1_email.'">';
+
+        $staff_pass=md5($staff_pass);
+        print'<form method="post" action="kadai1_add_done.php">';
+        print'<input type="hidden" name="name" value="'.$staff_name.'">';
+        print'<input type="hidden" name="pass" value="'.$staff_pass.'">';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
         print'<input type ="submit" value="OK">';
