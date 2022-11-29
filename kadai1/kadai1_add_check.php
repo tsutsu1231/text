@@ -122,7 +122,7 @@
         $kadai1_jusyo=md5($kadai1_jusyo);
         $kadai1_denwa=md5($kadai1_denwa);
         $kadai1_email=md5($kadai1_email);
-        print'<form method="post" action="kadai1_add_done.php">';
+        print'<form method="post" action="kadai1_edit_done.php">';
         print'<input type="hidden" name="ID" value="'.$$kadai1_ID.'">';
         print'<input type="hidden" name="name" value="'.$kadai1_name.'">';
         print'<input type="hidden" name="hurigana" value="'.$$kadai1_hurigana.'">';
@@ -130,11 +130,6 @@
         print'<input type="hidden" name="jusyo" value="'.$$kadai1_jusyo.'">';
         print'<input type="hidden" name="denwa" value="'.$$kadai1_denwa.'">';
         print'<input type="hidden" name="email" value="'.$$kadai1_email.'">';
-
-        $staff_pass=md5($staff_pass);
-        print'<form method="post" action="kadai1_add_done.php">';
-        print'<input type="hidden" name="name" value="'.$staff_name.'">';
-        print'<input type="hidden" name="pass" value="'.$staff_pass.'">';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
         print'<input type ="submit" value="OK">';
