@@ -10,7 +10,8 @@
         
         try
         {
-        
+
+            //p73～
         $kadai1_ID=$_POST['ID'];
         $kadai1_name=$_POST['name'];
         $kadai1_hurigana=$_POST['hurigana'];
@@ -29,7 +30,7 @@
         
         
 
-        $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
+        $dsn='mysql:dbname=shop;host=localhost;charset=utf8'; 
         $user='root';
         $password='';
         $dbh=new PDO($dsn,$user,$password);

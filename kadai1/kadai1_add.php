@@ -15,7 +15,7 @@
             ふりがなを入力してください。<br/>
             <input type="text" name="hurigana" style="width:100px"><br/>
             郵便番号を入力してください。<br/>
-            <input type="text" name="yubin" style="width:100px"><br/>
+            <input type="number" name="yubin" style="width:100px"><br/>
             住所を入力してください。<br/>
             <input type="text" name="jusyo" style="width:200px"><br/>
             電話番号を入力してください。<br/>
