@@ -4,7 +4,7 @@ if(isset($_POST['disp'])==true)
 {
     if(isset($_POST['staffcode'])==false)
     {
-        header('Location:staff_ng/php');
+        header('Location:staff_ng.php');
         exit();
     }
     $staff_code=$_POST['staffcode'];

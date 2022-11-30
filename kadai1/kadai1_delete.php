@@ -11,9 +11,7 @@
 try
 {
 
-    //p85
-
-$kadai1_ID=$_GET['ID'];
+$Kadai1_ID=$_GET['ID'];
 
 $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
 $user='root';
@@ -23,11 +21,11 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 $sql='SELECT name FROM kojin WHERE ID=?';
 $stmt=$dbh->prepare($sql);
-$data[]=$kadai1_ID;
+$data[]=$Kadai1_ID;
 $stmt->execute($data);
 
 $rec = $stmt->fetch(PDO::FETCH_ASSOC);
-$staff_name=$rec['name'];
+$kadai1_name=$rec['name'];
 
 $dbh=null;
 
@@ -40,27 +38,18 @@ catch(Exception $e)
 
 ?>
 
-修正<br/>
+削除<br/>
 <br/>
 ID<br/>
-<?php print $kadai1_ID;?>
+<?php print $Kadai1_ID;?>
 <br/>
-<br/>
-<form method="post" action="kadai1_edit_check.php">
-<input type="hidden" name="ID" value="<?php print $kadai1_ID;?>">
 名前<br/>
-<input type="text" name="name" style="width:200px"><br/>
-ふりがな<br/>
-<input type="text" name="hurigana" style="width:200px"><br/>
-郵便番号<br/>
-<input type="number" name="yubin" style="width:200px"><br/>
-住所<br/>
-<input type="text" name="jusyo" style="width:200px"><br/>
-電話番号<br/>
-<input type="tel" name="denwa" style="width:200px"><br/>
-Email<br/>
-<input type="text" name="email" style="width:200px"><br/>
+<?php print $kadai1_name; ?>
 <br/>
+削除してよろしいですか？<br/>
+<br/>
+<form method="post" action="kadai1_delete_done.php">
+<input type="hidden" name="ID" value="<?php print $Kadai1_ID;?>">
 <input type ="button" onclick="history.back()" value="戻る">
 <input type="submit" value="OK">
 </form>

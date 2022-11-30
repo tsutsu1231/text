@@ -8,8 +8,6 @@
         新規追加<br/>
         <br/>
         <form method="post" action="kadai1_add_check.php">
-            IDを入力してください。<br/>
-            <input type="text" name="ID" style="width:100px"><br/>
             氏名を入力してください。<br/>
             <input type="text" name="name" style="width:100px"><br/>
             ふりがなを入力してください。<br/>

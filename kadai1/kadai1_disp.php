@@ -11,9 +11,10 @@
 try
 {
 
-    //p85
+    //p106
 
 $kadai1_ID=$_GET['ID'];
+
 
 $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
 $user='root';
@@ -21,13 +22,19 @@ $password='';
 $dbh=new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql='SELECT name FROM kojin WHERE ID=?';
+$sql='SELECT name,hurigana,yubin,jusyo,denwa,email FROM kojin WHERE ID=?';
 $stmt=$dbh->prepare($sql);
 $data[]=$kadai1_ID;
 $stmt->execute($data);
 
 $rec = $stmt->fetch(PDO::FETCH_ASSOC);
-$staff_name=$rec['name'];
+$kadai1_name=$rec['name'];
+$kadai1_hurigana=$rec['hurigana'];
+$kadai1_yubin=$rec['yubin'];
+$kadai1_jusyo=$rec['jusyo'];
+$kadai1_denwa=$rec['denwa'];
+$kadai1_email=$rec['email'];
+
 
 $dbh=null;
 
@@ -40,29 +47,30 @@ catch(Exception $e)
 
 ?>
 
-修正<br/>
+情報参照<br/>
 <br/>
 ID<br/>
 <?php print $kadai1_ID;?>
 <br/>
-<br/>
-<form method="post" action="kadai1_edit_check.php">
-<input type="hidden" name="ID" value="<?php print $kadai1_ID;?>">
 名前<br/>
-<input type="text" name="name" style="width:200px"><br/>
-ふりがな<br/>
-<input type="text" name="hurigana" style="width:200px"><br/>
-郵便番号<br/>
-<input type="number" name="yubin" style="width:200px"><br/>
-住所<br/>
-<input type="text" name="jusyo" style="width:200px"><br/>
-電話番号<br/>
-<input type="tel" name="denwa" style="width:200px"><br/>
-Email<br/>
-<input type="text" name="email" style="width:200px"><br/>
+<?php print $kadai1_name;?>
 <br/>
+ふりがな<br/>
+<?php print $kadai1_hurigana;?>
+<br/>
+郵便番号<br/>
+<?php print $kadai1_yubin;?>
+<br/>
+住所<br/>
+<?php print $kadai1_jusyo;?>
+<br/>
+電話番号<br/>
+<?php print $kadai1_denwa;?>
+<br/>
+Email<br/>
+<br/>
+<?php print $kadai1_email;?>
 <input type ="button" onclick="history.back()" value="戻る">
-<input type="submit" value="OK">
 </form>
         
     </body>
