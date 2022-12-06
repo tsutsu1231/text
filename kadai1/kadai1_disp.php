@@ -68,8 +68,8 @@ ID<br/>
 <?php print $kadai1_denwa;?>
 <br/>
 Email<br/>
-<br/>
 <?php print $kadai1_email;?>
+<br/>
 <input type ="button" onclick="history.back()" value="戻る">
 </form>
         
