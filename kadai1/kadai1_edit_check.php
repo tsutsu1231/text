@@ -111,12 +111,13 @@
 
 
 
-    if($kadai1_name =''|| $kadai1_hurigana='' ||$kadai1_yubin='' || $kadai1_jusyo='' || $kadai1_denwa='' || $kadai1_email){
+    if($kadai1_name ==''|| $kadai1_hurigana=='' ||$kadai1_yubin=='' || $kadai1_jusyo=='' || $kadai1_denwa=='' || $kadai1_email==''){
         print'<form>';
         print'<input type="button" onclick="history.back()" value="戻る">';
         print'</form>';
     }else{
         print'<form method="post" action="kadai1_edit_done.php">';
+        print'<input type="hidden" name="ID" value="'.$kadai1_ID.'">';
         print'<input type="hidden" name="name" value="'.$kadai1_name.'">';
         print'<input type="hidden" name="hurigana" value="'.$kadai1_hurigana.'">';
         print'<input type="hidden" name="yubin" value="'.$kadai1_yubin.'">';
@@ -125,8 +126,8 @@
         print'<input type="hidden" name="email" value="'.$kadai1_email.'">';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
-        print '<input type="submit" value="OK">';
-        print '</ form>';
+        print'<input type="submit" value="OK">';
+        print '</form>';
 
     }
         
