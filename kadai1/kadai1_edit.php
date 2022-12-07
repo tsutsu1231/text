@@ -27,7 +27,12 @@ $data[]=$kadai1_ID;
 $stmt->execute($data);
 
 $rec = $stmt->fetch(PDO::FETCH_ASSOC);
-$staff_name=$rec['name'];
+$kadai1_name=$rec['name'];
+//$kadai1_name=$rec['hurigana'];
+//$kadai1_name=$rec['yubin'];
+//$kadai1_name=$rec['jusyo'];
+//$kadai1_name=$rec['denwa'];
+//$kadai1_name=$rec['email'];
 
 $dbh=null;
 

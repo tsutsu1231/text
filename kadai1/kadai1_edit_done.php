@@ -36,16 +36,16 @@
         $dbh=new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-        print "<pre>";
-        $sql='UPDATE kojin SET name=?,hurigana=?,yubin=?jusyo=?,denwa=?,email=? WHERE ID=?';
+        //print "<pre>";
+        $sql= 'UPDATE kojin SET name=?,hurigana=?,yubin=?,jusyo=?,denwa=?,email=? WHERE ID=?';
         $stmt=$dbh->prepare($sql);
-        //$data[]=$kadai1_ID;
         $data[]=$kadai1_name;
         $data[]=$kadai1_hurigana;
         $data[]=$kadai1_yubin;
         $data[]=$kadai1_jusyo;
         $data[]=$kadai1_denwa;
         $data[]=$kadai1_email;
+        $data[]=$kadai1_ID;
         $stmt->execute($data);
 
         $dbh=null;

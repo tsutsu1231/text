@@ -24,8 +24,7 @@
     $stmt->execute();
 
     $dbh=null;
-
-    print'一覧<br/><br/>';
+    print '一覧<br/><br/>';
 
     print'<form method="post" action="kadai1_branch.php">';
     while(true)
@@ -55,5 +54,6 @@
     
    
     ?>
+
     </body>
 </html>
