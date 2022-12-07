@@ -3,14 +3,14 @@ body{
     background-color: #fffafa;
 }
 
-.itiran{
-    color : #5C3C4C;
+.sansyou{
+    color: #5C3C4C;
     font-weight: bold;
     font-size: 25px; 
     padding-left: 65px;
 }
 
-.kojinmei{
+.jouhou{
     color :#5C3C4C;
     font-size: auto;
     padding-left: 15px;
@@ -21,4 +21,5 @@ body{
     color: #5C3C4C;
     border-radius: 10px;
     border-color: #8C727F;
+    text-align:center;
 }

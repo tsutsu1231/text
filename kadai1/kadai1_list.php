@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>課題１</title>
+        <link href="kadai1_list.css" rel="stylesheet" type="text/css">
     </head>
     <body>
 
@@ -24,7 +25,9 @@
     $stmt->execute();
 
     $dbh=null;
-    print '一覧<br/><br/>';
+    echo "<div class=itiran>";
+    print '<br>一覧<br/><br/>';
+    echo "</div>";
 
     print'<form method="post" action="kadai1_branch.php">';
     while(true)
@@ -35,16 +38,23 @@
             break;
         }
         
+        echo "<div class=kojinmei>";
+
         print'<input type="radio" name="ID" value="'.$rec['ID'].'">';
         print $rec['name'];
         print '<br/>';
         print $rec['hurigana'];
         print'<br/>';
+        print'<br/>';
+
+        echo "</div>";
     }
-    print'<input type="submit" name="disp" value="参照">';
-    print'<input type="submit" name="add" value="追加">';
-    print'<input type="submit" name="edit" value="修正">';
-    print'<input type="submit" name="delete" value="削除">';
+
+
+    echo '<input class="botan"input type="submit" name="disp" value="参照">';
+    echo '<input class="botan"input type="submit" name="add" value="追加">';
+    echo '<input class="botan"input type="submit" name="edit" value="修正">';
+    echo '<input class="botan"input type="submit" name="delete" value="削除">';
     print'</form>';
     }
     catch(Exception $e)

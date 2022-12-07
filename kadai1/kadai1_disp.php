@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>課題１</title>
+        <link href="kadai1_disp.css" rel="stylesheet" type="text/css">
     </head>
 <body>
 
@@ -47,8 +48,12 @@ catch(Exception $e)
 
 ?>
 
+<div class=sansyou>
 情報参照<br/>
 <br/>
+</div>
+
+<div class=jouhou>
 ID<br/>
 <?php print $kadai1_ID;?>
 <br/>
@@ -70,7 +75,10 @@ ID<br/>
 Email<br/>
 <?php print $kadai1_email;?>
 <br/>
-<input type ="button" onclick="history.back()" value="戻る">
+<br/>
+
+</div>
+<input class="botan" type ="button" onclick="history.back()" value="戻る">
 </form>
         
     </body>
