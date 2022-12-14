@@ -54,27 +54,41 @@ catch(Exception $e)
 </div>
 
 <div class=jouhou>
+<div class = id>
 ID<br/>
 <?php print $kadai1_ID;?>
 <br/>
+</div>
+<div class=namae>
 名前<br/>
 <?php print $kadai1_name;?>
 <br/>
+</div>
+<div class=hurigana>
 ふりがな<br/>
 <?php print $kadai1_hurigana;?>
 <br/>
+</div>
+<div class=yubin>
 郵便番号<br/>
 <?php print $kadai1_yubin;?>
 <br/>
+</div>
+<div class=jusyo>
 住所<br/>
 <?php print $kadai1_jusyo;?>
 <br/>
+</div>
+<div class=denwa>
 電話番号<br/>
 <?php print $kadai1_denwa;?>
 <br/>
+</div>
+<div class=email>
 Email<br/>
 <?php print $kadai1_email;?>
 <br/>
+</div>
 <br/>
 
 </div>

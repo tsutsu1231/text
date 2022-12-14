@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>課題１</title>
+        <link href="kadai1_delete.css" rel="stylesheet" type="text/css">
     </head>
 <body>
 
@@ -38,20 +39,31 @@ catch(Exception $e)
 
 ?>
 
+<div class=sakujo>
+
 削除<br/>
 <br/>
+</div>
+
+<div class=meimoku>
 ID<br/>
 <?php print $Kadai1_ID;?>
 <br/>
 名前<br/>
 <?php print $kadai1_name; ?>
 <br/>
+<br/>
+</div>
+
+<div class=kakunin>
 削除してよろしいですか？<br/>
+</div>
 <br/>
 <form method="post" action="kadai1_delete_done.php">
 <input type="hidden" name="ID" value="<?php print $Kadai1_ID;?>">
 <input type ="button" onclick="history.back()" value="戻る">
 <input type="submit" value="OK">
+
 </form>
         
     </body>

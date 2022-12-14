@@ -1,25 +1,67 @@
 @charset "utf-8";
 body{
-    background-color: #fffafa;
+    background-color: #F5F5F5;
 }
 
 .sansyou{
-    color: #5C3C4C;
+    color: #708090;
     font-weight: bold;
     font-size: 25px; 
     padding-left: 65px;
 }
 
 .jouhou{
-    color :#5C3C4C;
+    color :#444444;
     font-size: auto;
-    padding-left: 15px;
+    padding-left: 5px;
+    width: 200px;
+}
+
+.id{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
+}
+.namae{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
+}
+
+.hurigana{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
+}
+
+.yubin{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
+}
+
+.jusyo{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
+}
+
+.denwa{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
+}
+
+.email{
+    border: 1px solid #708090; 
+    padding-left: 10px;
+    background-color:white;
 }
 
 .botan{
-    background-color: #fdfdfd;
-    color: #5C3C4C;
+    background-color: #F5F5F5;
+    color: #444444;
     border-radius: 10px;
-    border-color: #8C727F;
+    border-color: #708090;
     text-align:center;
 }

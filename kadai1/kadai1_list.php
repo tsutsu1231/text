@@ -26,7 +26,7 @@
 
     $dbh=null;
     echo "<div class=itiran>";
-    print '<br>一覧<br/><br/>';
+    echo '<br>一覧<br/><br/>';
     echo "</div>";
 
     print'<form method="post" action="kadai1_branch.php">';
@@ -49,7 +49,7 @@
 
         echo "</div>";
     }
-
+    
 
     echo '<input class="botan"input type="submit" name="disp" value="参照">';
     echo '<input class="botan"input type="submit" name="add" value="追加">';

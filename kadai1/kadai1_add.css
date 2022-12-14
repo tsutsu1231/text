@@ -1,0 +1,18 @@
+@charset "utf-8";
+body{
+    background-color: #F5F5F5;
+}
+
+.sinki{
+    color: #708090	;
+    font-weight: bold;
+    font-size: 25px; 
+    padding-left: 65px;
+}
+
+.jouhou{
+    color :#444444;
+    font-size: auto;
+    padding-left: 5px;
+
+}
