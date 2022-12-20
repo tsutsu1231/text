@@ -8,11 +8,11 @@
         
     <?php
 
-    $staff_name=$_POST['name'];
-    $staff_price=$_POST['price'];
+    $pro_name=$_POST['name'];
+    $pro_price=$_POST['price'];
 
-    $staff_name=htmlspecialchars($pro_name,ENT_QUOTES,'UTF-8');
-    $staff_price=htmlspecialchars($pro_price,ENT_QUOTES,'UTF-8');
+    $pro_name=htmlspecialchars($pro_name,ENT_QUOTES,'UTF-8');
+    $pro_price=htmlspecialchars($pro_price,ENT_QUOTES,'UTF-8');
 
     if($pro_name=='')
     {
@@ -38,16 +38,16 @@
 
    if($pro_name==''||preg_match('/\A[0-9]+\z/',$pro_price==0))
    {
-    print'<form>';
-    print'<input type ="button" onclick="history.back()"value="戻る">';
-    print'</form>';
+        print'<form>';
+        print'<input type ="button" onclick="history.back()"value="戻る">';
+        print'</form>';
    }
     else
     {
        print'上記の商品を追加します。<br/>';
         print'<form method="post" action="pro_add_done.php">';
         print'<input type="hidden" name="name" value="'.$pro_name.'">';
-        print'<input type="hidden" name="pass" value="'.$pro_price.'">';
+        print'<input type="hidden" name="price" value="'.$pro_price.'">';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
         print'<input type ="submit" value="OK">';
