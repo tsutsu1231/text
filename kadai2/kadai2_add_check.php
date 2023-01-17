@@ -23,6 +23,7 @@
     else
     {
         print'画像のタイトル';
+        print' ';
         print $kadai2_title;
         print'<br/>';
     }
@@ -45,6 +46,7 @@
    else
    {
        print'画像の説明';
+       print' ';
        print $kadai2_description;
        print'<br/>';
    }
@@ -56,7 +58,6 @@
             print'画像が大きすぎます';
         }else
         {
-            print'画像';
             move_uploaded_file($kadai2_file['tmp_name'],'./image/'.$kadai2_file['name']);
             print'<img src="./image/'.$kadai2_file['name'].'">';
             print'<br/>';

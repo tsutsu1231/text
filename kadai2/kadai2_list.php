@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>課題2</title>
+        <link href="kadai2_add.css" rel="stylesheet" type="text/css">
     </head>
     <body>
 
@@ -19,14 +20,17 @@
     $sql='SELECT id,title,description,file FROM image WHERE 1';
     $stmt=$dbh->prepare($sql);
     $stmt->execute();
+    
 
     $dbh=null;
 
     print'画像一覧<br/><br/>';
 
-    print'';
+    print' ';
     print'ID';
+    print' ';
     print'タイトル';
+    print' ';
     print'サムネイル';
 
     print'<form method="post" action="kadai2_branch.php">';
@@ -39,8 +43,8 @@
         }
         print'<input type="radio" name="kadai2code" value="'.$rec['id'].'">';
         print$rec['title'];
-        print$rec['description'];
-        print$rec['file'];
+        //print$rec['description'];
+        //print$rec['file'];
         print'<br/>';
     }
     print'<input type="submit" name="disp" value="参照">';
