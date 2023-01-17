@@ -10,17 +10,16 @@
     
 try
 {
-$kadai2_id=$_GET['kadai2id'];
+$kadai2_code=$_GET['kadai2code'];
 
 $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
 $user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
+$dbh=new PDO($dsn,$user,"");
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql='SELECT title,description,file FROM image WHERE code=?';
+$sql='SELECT title,description,file FROM image WHERE id=?';
 $stmt=$dbh->prepare($sql);
-$data[]=$kadai2_id;
+$data[]=$kadai2_code;
 $stmt->execute($data);
 
 $rec = $stmt->fetch(PDO::FETCH_ASSOC);

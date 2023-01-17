@@ -13,8 +13,7 @@
 
     $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
     $user='root';
-    $password='';
-    $dbh=new PDO($dsn,$user,$password);
+    $dbh=new PDO($dsn,$user,"");
     $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
     $sql='SELECT id,title,description,file FROM image WHERE 1';
@@ -38,7 +37,7 @@
         {
             break;
         }
-        print'<input type="radio" name="id" value="'.$rec['id'].'">';
+        print'<input type="radio" name="kadai2code" value="'.$rec['id'].'">';
         print$rec['title'];
         print$rec['description'];
         print$rec['file'];

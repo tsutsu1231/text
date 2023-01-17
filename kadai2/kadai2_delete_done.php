@@ -11,7 +11,7 @@
         try
         {
         
-        $kadai2_id=$_POST['id'];
+        $kadai2_code=$_POST['kadai2code'];
         $kadai2_file_name=$_POST['file_name'];
         
         $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
@@ -20,9 +20,9 @@
         $dbh=new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-        $sql='DELETE FROM image WHERE code=?';
+        $sql='DELETE FROM image WHERE id=?';
         $stmt=$dbh->prepare($sql);
-        $date[]=$pro_code;
+        $date[]=$kadai2_code;
         $stmt->execute($date);
 
         $dbh=null;
