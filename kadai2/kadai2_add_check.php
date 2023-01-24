@@ -17,6 +17,8 @@
     $kadai2_title=htmlspecialchars($kadai2_title,ENT_QUOTES,'UTF-8');
     $kadai2_description=htmlspecialchars($kadai2_description,ENT_QUOTES,'UTF-8');
 
+    print'<h1>画像の登録</h1>';
+
     print'<table>';
     print'<tr>';
 

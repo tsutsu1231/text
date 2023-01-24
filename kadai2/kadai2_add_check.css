@@ -1,7 +1,4 @@
-@charset "utf-8";
-
 body{
-  background-color: aquamarine;
     margin:1em 0;
     padding: 0.5em 1em;
     border-radius: 9px;
@@ -27,8 +24,8 @@ th, td {
   }
 
   .gazou{
-  max-width: auto;
-  max-height: auto;
+    width: 150px;
+    height: auto;
   }
 
   .hyouji{
