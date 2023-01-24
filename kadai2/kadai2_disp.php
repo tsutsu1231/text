@@ -47,13 +47,15 @@ catch(Exception $e)
 
 ?>
 
-情報参照<br/>
+<div class=background>
+
+<h1>情報参照</h1><br/>
 <br/>
-タイトル
+【タイトル】
 <?php print ' ' ;?>
 <?php print $kadai2_title;?>
 <br/>
-説明
+【説明】
 <?php print ' ' ;?>
 <?php print $kadai2_description;?>
 <br/>
@@ -63,6 +65,6 @@ catch(Exception $e)
 <form>
 <input type ="button" onclick="history.back()" value="戻る">
 </form>
-        
+    </div>
     </body>
 </html>

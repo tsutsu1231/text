@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-  background-color: darkcyan;
+  background-color: #006400;
   color: #fff;
   padding: 1rem 2rem;
   text-align: center;
@@ -26,10 +26,7 @@ th, td {
     border-collapse: collapse;
   }
 
-  .gazou{
-    max-width: auto;
-    max-height: auto;
-  }
+ 
 
   .jouhou{
     text-align: center;

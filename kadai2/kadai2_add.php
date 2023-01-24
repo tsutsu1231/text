@@ -15,7 +15,7 @@
         <tr>
             <div class=jouhou>
            <th>画像のタイトル　</th>
-            <td><input type="text" name="title" style="width:365px"></td><br/>
+            <td><input type="text" name="title" style="width:380px"></td><br/>
             <tr><br/></tr>
            <th> 画像の説明　</th>
            <td><textarea name="description" cols="50" rows="5"></textarea></td><br/>

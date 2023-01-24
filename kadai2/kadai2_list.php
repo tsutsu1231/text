@@ -6,7 +6,7 @@
         <link href="kadai2_list.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-
+    <div class="background">
     <?php
     
     try
@@ -52,7 +52,7 @@
         }
         $kadai2_file_name=$rec['file'];
         $list_file='<img src="./image/' .$kadai2_file_name.'">';
-        echo"<div class= hyouji>";
+        echo'<div class= hyouji>';
         print'<td><input type="radio" name="kadai2code" value="'.$rec['id'].'">';
         print"<td>".$rec['id']."</td>";
         print"<td>".$rec['title']."</td>";
@@ -61,9 +61,11 @@
         print "<td><div class=gazou>$list_file </div></td>";
         print'<tr><br/></tr>';
         print'<br/>';
+
         echo"</div>";
     }
     echo "</table>";
+    print '<br/>';
     print'<input type="submit" name="disp" value="参照">';
     print'<input type="submit" name="add" value="追加">';
     //print'<input type="submit" name="edit" value="修正">';
@@ -77,5 +79,6 @@
     
    
     ?>
+    </div>
     </body>
 </html>

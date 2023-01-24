@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body{
+  background-color: #EEFFFF;
     margin:1em 0;
     padding: 0.5em 1em;
     border-radius: 9px;
@@ -10,8 +11,15 @@ body{
 
 }
 
+.background{
+  background-color: #EEFFFF;
+}
+
 h1{
-  background-color: darkcyan;
+  background-color: #006400;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 th, td {
@@ -22,9 +30,11 @@ th, td {
     border-collapse: collapse;
   }
 
-  .gazou{
-    max-width: auto;
-    max-height: auto;
+  
+
+  img{
+    width:300px;
+    height:auto;
   }
 
   .hyouji{
