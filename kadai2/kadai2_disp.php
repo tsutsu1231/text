@@ -49,10 +49,12 @@ catch(Exception $e)
 
 情報参照<br/>
 <br/>
-タイトル<br/>
+タイトル
+<?php print ' ' ;?>
 <?php print $kadai2_title;?>
 <br/>
-説明<br/>
+説明
+<?php print ' ' ;?>
 <?php print $kadai2_description;?>
 <br/>
 <?php print $disp_file;?>

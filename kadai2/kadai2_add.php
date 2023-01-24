@@ -7,18 +7,24 @@
     </head>
     <body>
         <div class=sinki>
-        新規追加<br/>
+       <h1> 新規追加</h1><br/>
         </div>
         <br/>
         <form method="post" action="kadai2_add_check.php"enctype="multipart/form-data">
+        <table>
+        <tr>
             <div class=jouhou>
-            画像のタイトル　<br/>
-            <input type="text" name="title" style="width:300px"><br/>
-            画像の説明　<br/>
-            <textarea name="description" cols="50" rows="5"></textarea><br/>
-            画像ファイルの選択　<br/>
-            <input type="file" name="file" style="width:400px"><br/>
+           <th>画像のタイトル　</th>
+            <td><input type="text" name="title" style="width:365px"></td><br/>
+            <tr><br/></tr>
+           <th> 画像の説明　</th>
+           <td><textarea name="description" cols="50" rows="5"></textarea></td><br/>
+           <tr><br/></tr>
+           <th> 画像ファイルの選択　</th>
+            <td><input type="file" name="file" style="width:400px"></td><br/>
             </div>
+        </tr>
+        </table>
             <br/>
             <input type="button" onclick="history.back()" value="戻る">
             <input type="submit" value="OK"> 

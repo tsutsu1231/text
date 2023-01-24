@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>課題2</title>
+        <link href="kadai2_add_check.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         
@@ -15,6 +16,9 @@
 
     $kadai2_title=htmlspecialchars($kadai2_title,ENT_QUOTES,'UTF-8');
     $kadai2_description=htmlspecialchars($kadai2_description,ENT_QUOTES,'UTF-8');
+
+    print'<table>';
+    print'<tr>';
 
     if($kadai2_title=='')
     {
@@ -74,9 +78,11 @@
     {
        print'上記を追加します。<br/>';
         print'<form method="post" action="kadai2_add_done.php">';
-        print'<input type="hidden" name="title" value="'.$kadai2_title.'">';
-        print'<input type="hidden" name="description" value="'.$kadai2_description.'">';
-        print'<input type="hidden" name="file_name" value="'.$kadai2_file['name'].'">';
+        print'<td><input type="hidden" name="title" value="'.$kadai2_title.'"></td>';
+        print'<td><input type="hidden" name="description" value="'.$kadai2_description.'"></td>';
+        print'<td><input type="hidden" name="file_name" value="'.$kadai2_file['name'].'"></td>';
+        print'</tr>';
+        print'</table>';
         print'<br/>';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';

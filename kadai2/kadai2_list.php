@@ -23,8 +23,9 @@
     
 
     $dbh=null;
-
-    print'画像一覧<br/><br/>';
+    echo"
+    <h1>
+    画像一覧</h1>";
 
     print'<form method="post" action="kadai2_branch.php">';
 
@@ -51,14 +52,16 @@
         }
         $kadai2_file_name=$rec['file'];
         $list_file='<img src="./image/'.$kadai2_file_name.'">';
+        echo"<div class= hyouji>";
         print'<td><input type="radio" name="kadai2code" value="'.$rec['id'].'">';
         print"<td>".$rec['id']."</td>";
         print"<td>".$rec['title']."</td>";
         //print$rec['description'];
         //print$rec['file'];
         print "<td><div class=gazou>$list_file</div></td>";
+        print'<tr><br/></tr>';
         print'<br/>';
-        print'<br/>';
+        echo"</div>";
     }
     echo "</table>";
     print'<input type="submit" name="disp" value="参照">';
