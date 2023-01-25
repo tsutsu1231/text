@@ -1,19 +1,13 @@
 @charset "utf-8";
 
 body{
-  background-color: #EEFFFF;
-    margin:1em 0;
-    padding: 0.5em 1em;
-    border-radius: 9px;
-    margin-top: 50px;
-    color: #000;
-    background-color: white;
-
+    background-color: #EEFFFF;
+     margin:1em 0;
+     padding: 0.5em 1em;
+     border-radius: 9px;
+     margin-top: 10px;
 }
 
-.background{
-  background-color: #EEFFFF;
-}
 
 h1{
   background-color: #006400	;
@@ -35,8 +29,4 @@ th, td {
   img{
     width:150px;
     height:auto;
-  }
-
-  .hyouji{
-    text-align: center;
   }

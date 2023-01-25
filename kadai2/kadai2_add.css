@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 body{
+  background-color: #EEFFFF;
     margin:1em 0;
     padding: 0.5em 1em;
     border-radius: 9px;
     margin-top: 50px;
     color: #000;
-    background-color: white;
 
 }
 

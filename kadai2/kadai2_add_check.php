@@ -28,10 +28,10 @@
     }
     else
     {
-        print'画像のタイトル';
+        print'<th>画像のタイトル</th>';
         print' ';
-        print $kadai2_title;
-        print'<br/>';
+        print '<td>'.$kadai2_title.'</td>';
+        print'<tr><br/></tr>';
     }
 
    // if(preg_match('/\A[0-9]+\z/' , $pro_price==0))
@@ -51,10 +51,10 @@
    }
    else
    {
-       print'画像の説明';
+       print'<th>画像の説明</th>';
        print' ';
-       print $kadai2_description;
-       print'<br/>';
+       print '<td>'.$kadai2_description.'</td>';
+       print'<tr><br/></tr>';
    }
 
     if($kadai2_file['size']>0)
@@ -65,10 +65,14 @@
         }else
         {
             move_uploaded_file($kadai2_file['tmp_name'],'./image/'.$kadai2_file['name']);
-            print'<img src="./image/'.$kadai2_file['name'].'">';
-            print'<br/>';
+            print'<th>画像</th>';
+            print'<td><img src="./image/'.$kadai2_file['name'].'"></td>';
+            print'<tr><br/></tr>';
         }
     }
+
+    print'</tr>';
+    print'</table>';
 
    if($kadai2_title==''||$kadai2_description==''||$kadai2_file['size']>1000000)
    {
@@ -80,11 +84,11 @@
     {
        print'上記を追加します。<br/>';
         print'<form method="post" action="kadai2_add_done.php">';
-        print'<td><input type="hidden" name="title" value="'.$kadai2_title.'"></td>';
-        print'<td><input type="hidden" name="description" value="'.$kadai2_description.'"></td>';
-        print'<td><input type="hidden" name="file_name" value="'.$kadai2_file['name'].'"></td>';
-        print'</tr>';
-        print'</table>';
+        print'<input type="hidden" name="title" value="'.$kadai2_title.'">';
+        print'<input type="hidden" name="description" value="'.$kadai2_description.'">';
+        print'<input type="hidden" name="file_name" value="'.$kadai2_file['name'].'">';
+        //print'</tr>';
+        //print'</table>';
         print'<br/>';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';

@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>課題2</title>
+        <link href="kadai2_disp.css" rel="stylesheet" type="text/css">
     </head>
 <body>
+    <div class="sansyo">
 
 <?php
     
@@ -46,8 +48,6 @@ catch(Exception $e)
 }
 
 ?>
-
-<div class=background>
 
 <h1>情報参照</h1><br/>
 <br/>

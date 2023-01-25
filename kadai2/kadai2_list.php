@@ -6,7 +6,6 @@
         <link href="kadai2_list.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-    <div class="background">
     <?php
     
     try
@@ -79,6 +78,5 @@
     
    
     ?>
-    </div>
     </body>
 </html>

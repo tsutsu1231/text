@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>課題2</title>
+        <link href="kadai2_delete.css" rel="stylesheet" type="text/css">
     </head>
 <body>
 
@@ -49,14 +50,17 @@ catch(Exception $e)
 
 ?>
 
-削除<br/>
+<h1>画像の削除確認</h1><br/>
 <br/>
-【ID】<br/>
+【ID】
+<?php print ' ' ;?>
 <?php print $kadai2_code;?>
 <br/>
-【タイトル】<br/>
+【タイトル】
+<?php print ' ' ;?>
 <?php print $kadai2_title; ?>
 <br/>
+<?php print ' ' ;?>
 <?php print $disp_file;?>
 <br/>
 このファイルを削除してよろしいですか？<br/>

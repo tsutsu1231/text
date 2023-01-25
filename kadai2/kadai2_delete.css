@@ -7,7 +7,9 @@ body{
     border-radius: 9px;
     margin-top: 50px;
     color: #000;
+
 }
+
 
 h1{
   background-color: #006400;
@@ -24,7 +26,13 @@ th, td {
     border-collapse: collapse;
   }
 
+  
+
   img{
-    width:300px;
+    width:150px;
     height:auto;
+  }
+
+  .hyouji{
+    text-align: center;
   }
