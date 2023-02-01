@@ -26,8 +26,10 @@
         </tr>
         </table>
             <br/>
+            <div class=button>
             <input type="button" onclick="history.back()" value="戻る">
             <input type="submit" value="OK"> 
+</div>
         </form>
         
     </body>

@@ -6,7 +6,7 @@
         <link href="kadai2_disp.css" rel="stylesheet" type="text/css">
     </head>
 <body>
-    <div class="sansyo">
+<div class=sansyo>
 
 <?php
     

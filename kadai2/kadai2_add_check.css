@@ -21,13 +21,14 @@ th, td {
 
   table{
     border-collapse: collapse;
+    margin: auto;
   }
+
+.button{
+  text-align: center;
+}
 
   img{
     width: 300px;
     height: auto;
-  }
-
-  .hyouji{
-    text-align: center;
   }

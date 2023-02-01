@@ -16,15 +16,11 @@ h1{
   text-align: center;
 }
 
-th, td {
-   border: solid 1px;
-  }
-
-  table{
-    border-collapse: collapse;
-  }
-
   img{
     width:300px;
     height:auto;
+  }
+
+  .sansyo{
+    text-align: center;
   }

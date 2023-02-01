@@ -82,6 +82,7 @@
    }
     else
     {
+        print'<div class=button>';
        print'上記を追加します。<br/>';
         print'<form method="post" action="kadai2_add_done.php">';
         print'<input type="hidden" name="title" value="'.$kadai2_title.'">';
@@ -93,6 +94,7 @@
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
         print'<input type ="submit" value="OK">';
+        print'</div>';
         print'</from>';
     }
 

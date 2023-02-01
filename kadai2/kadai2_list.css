@@ -22,11 +22,14 @@ th, td {
 
   table{
     border-collapse: collapse;
+    margin:auto;
   }
-
-  
 
   img{
     width:150px;
     height:auto;
+  }
+
+  .button{
+   text-align: center;
   }

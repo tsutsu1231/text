@@ -51,24 +51,24 @@
         }
         $kadai2_file_name=$rec['file'];
         $list_file='<img src="./image/' .$kadai2_file_name.'">';
-        echo'<div class= hyouji>';
         print'<td><input type="radio" name="kadai2code" value="'.$rec['id'].'">';
         print"<td>".$rec['id']."</td>";
         print"<td>".$rec['title']."</td>";
         //print$rec['description'];
         //print$rec['file'];
-        print "<td><div class=gazou>$list_file </div></td>";
+        print "<td>$list_file </div></td>";
         print'<tr><br/></tr>';
         print'<br/>';
 
-        echo"</div>";
     }
     echo "</table>";
     print '<br/>';
+    print'<div class=button>';
     print'<input type="submit" name="disp" value="参照">';
     print'<input type="submit" name="add" value="追加">';
     //print'<input type="submit" name="edit" value="修正">';
     print'<input type="submit" name="delete" value="削除">';
+    print'</div>';
     print'</form>';
     }
     catch(Exception $e)

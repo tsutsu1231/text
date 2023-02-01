@@ -24,10 +24,9 @@ th, td {
 
   table{
     border-collapse: collapse;
+    margin: auto;
   }
 
- 
-
-  .jouhou{
+  .button{
     text-align: center;
   }
